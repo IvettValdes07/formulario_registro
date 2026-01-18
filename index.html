@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+
+        body {
+            background: #020617;
+            color: #e5e7eb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        form {
+            background: #020617;
+            border: 1px solid #1e293b;
+            border-radius: 16px;
+            padding: 28px;
+            width: 100%;
+            max-width: 380px;
+            box-shadow: 0 20px 40px rgba(0,0,0,.6);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 10px;
+            border: 1px solid #1e293b;
+            background: #020617;
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #38bdf8;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            background: #38bdf8;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        #success {
+            display: none;
+            margin-top: 16px;
+            text-align: center;
+            color: #22c55e;
+        }
+    </style>
+</head>
+
+<body>
+
+<form id="form">
+    <h2>Registro</h2>
+
+    <!-- ⚠ IMPORTANTE: names EXACTOS -->
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="correo" placeholder="Correo" required>
+    <input type="text" name="whatsapp" placeholder="WhatsApp" required>
+    <input type="text" name="local" placeholder="Local" required>
+
+    <button type="submit">Enviar</button>
+    <p id="success">✅ Registro exitoso</p>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
