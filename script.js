@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("czDWUqMBEYh48EVMO"); // PUBLIC KEY
+    emailjs.init("cIuVigCuXoIlwQZF8"); // PUBLIC KEY
 })();
 
 const form = document.getElementById("form");
@@ -9,8 +9,8 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "service_h8dqwck",   // SERVICE ID
-        "template_ithweea",  // TEMPLATE ID
+        "service_hqxqadi",   // SERVICE ID
+        "template_8lghcbq",  // TEMPLATE ID
         this
     ).then(
         function () {
